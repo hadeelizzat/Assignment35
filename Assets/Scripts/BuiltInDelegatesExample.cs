@@ -15,7 +15,7 @@ public class BuiltInDelegatesExample : MonoBehaviour
         square = (int no) => (int)(Math.Pow(no, 2));
         Debug.Log($"Square: {square(5)}");
 
-        isEven = (int no) => no != 2;
+        isEven = (int no) => no % 2 == 0;
         Debug.Log($"Is 4 even? {isEven(4)}");
     }
 
